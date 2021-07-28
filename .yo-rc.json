@@ -2,11 +2,6 @@
   "@microsoft/generator-sharepoint": {
     "isCreatingSolution": true,
     "environment": "spo",
-    "version": "1.12.1",
-    "libraryName": "spfk-demos",
-    "libraryId": "d018a2d5-585e-4f80-b9ab-7e4e4f9e1f4f",
-    "packageManager": "npm",
-    "isDomainIsolated": false,
-    "componentType": "webpart"
+    "whichFolder": "subdir"
   }
 }
