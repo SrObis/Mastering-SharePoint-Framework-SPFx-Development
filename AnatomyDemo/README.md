@@ -1,4 +1,4 @@
-# multiwebpartdemo
+# anatomy-demo
 
 ## Summary
 
