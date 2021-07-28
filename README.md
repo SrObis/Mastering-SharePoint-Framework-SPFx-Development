@@ -1,57 +1,45 @@
 # Sección 2: Working with SharePoint Client Side Web Parts
 
-## 13. Finding Out SPFx Version of Your SPFx Solution
+## 14. Creating Multiple Web Parts as part of Single Solution
 
-md test1
-cd test1
+md multiwebpartdemo
+
+cd multiwebpartdemo
+
 yo @microsoft/sharepoint
 
 Let's create a new SharePoint solution.
-? What is your solution name? test-1
-? Which baseline packages do you want to target for your component(s)? SharePoint O
-nline only (latest)
-? Where do you want to place the files? Use the current folder
-Found npm version 6.14.13
-? Do you want to allow the tenant admin the choice of being able to deploy the solu
-tion to all sites immediately without running any feature deployment or adding apps
-in sites? No
-? Will the components in the solution require permissions to access web APIs that a
-re unique and not shared with other components in the tenant? No
-? Which type of client-side component to create? WebPart
-Add new Web part to solution test-1.
-? What is your Web part name? HelloWorld
-? What is your Web part description? HelloWorld description
-? Which framework would you like to use? No JavaScript framework
-
-abrimos el code
-vamos al package.json y en dependencia podemos ver la version
-"@microsoft/sp-core-library": "1.12.1", en mi caso
-esto nos influye en la version de SPF X que vamos a usar
-
----
-
-md test2
-cd test2
-yo @microsoft/sharepoint --plusbeta
-Let's create a new SharePoint solution.
-? What is your solution name? test-2
+? What is your solution name? multiwebpartdemo
 ? Which baseline packages do you want to target for your component(s)? SharePoint Online only (latest)
 ? Where do you want to place the files? Use the current folder
 Found npm version 6.14.13
-? Do you want to allow the tenant admin the choice of being able to deploy the solution to all sites immediately without running any feature deployment or adding apps in sites? No
+? Do you want to allow the tenant admin the choice of being able to deploy the solution to all sites immediately without running any feature deployment or adding apps i
+n sites? No
 ? Will the components in the solution require permissions to access web APIs that are unique and not shared with other components in the tenant? No
 ? Which type of client-side component to create? WebPart
-Add new Web part to solution test-2.
-? What is your Web part name? HelloWorld
-? What is your Web part description? HelloWorld description
+Add new Web part to solution multiwebpartdemo.
+? What is your Web part name? HelloWordl1
+? What is your Web part description? HelloWordl1 description
 ? Which framework would you like to use? No JavaScript framework
-vamos al package.json y en dependencia podemos ver la version
-"@microsoft/sp-core-library": "1.12.1-plusbeta", vemos que sale plusbeta
-Esto nos puede servir cundo trabajemos con clases especiales como SPHttp
 
----
+si volvemos a ejecutar
+yo @microsoft/sharepoint
+solo nos pide:
 
-si en el test1 donde en el package.json no tiene el plusbeta ponemos todo plusbeta en las dependencias
-y ejecutamos
-npm install
-creamos la plusbeta bersion desde el normal
+? Which type of client-side component to create? WebPart
+Add new Web part to solution multiwebpartdemo.
+? What is your Web part name? HelloWoeld2
+? What is your Web part description? HelloWoeld2 description
+? Which framework would you like to use? No JavaScript framework
+
+yo @microsoft/sharepoint
+? Which type of client-side component to create? WebPart
+Add new Web part to solution multiwebpartdemo.
+? What is your Web part name? HelloWorld3
+? What is your Web part description? HelloWorld3 description
+? Which framework would you like to use? No JavaScript framework
+
+Ahora tenemos 3 HelloWorld en el mimso proyecto
+gulp build
+gulp serve
+podemos ver que se puede selecionar los 3 HelloWorld
