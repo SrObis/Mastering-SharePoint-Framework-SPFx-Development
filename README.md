@@ -1,5 +1,5 @@
-#Sección 2: Working with SharePoint Client Side Web Parts
-##10. Developing a Simple SharePoint Client Side Web Part - Approach 1
+# Sección 2: Working with SharePoint Client Side Web Parts
+## 10. Developing a Simple SharePoint Client Side Web Part - Approach 1
 
 1- yo @microsoft/sharepoint -->para empezar a crear el proyecto
 2- En mas informacion si (y)
