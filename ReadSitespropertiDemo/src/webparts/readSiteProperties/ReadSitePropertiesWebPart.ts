@@ -1,7 +1,8 @@
 import { Version } from '@microsoft/sp-core-library';
 import {
   IPropertyPaneConfiguration,
-  PropertyPaneTextField
+  PropertyPaneTextField,
+  BaseClientSideWebPad
 } from '@microsoft/sp-property-pane';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 import { escape } from '@microsoft/sp-lodash-subset';
@@ -9,11 +10,27 @@ import { escape } from '@microsoft/sp-lodash-subset';
 import styles from './ReadSitePropertiesWebPart.module.scss';
 import * as strings from 'ReadSitePropertiesWebPartStrings';
 
+import {
+  Environment,
+  EnvironmentType
+} from '@microsoft/sp-core-library'
+
 export interface IReadSitePropertiesWebPartProps {
   description: string;
+  envionmenttitle: string;
 }
 
 export default class ReadSitePropertiesWebPart extends BaseClientSideWebPart<IReadSitePropertiesWebPartProps> {
+  
+  private findOutEnvi(): void {
+    //en Local
+    if(Environment.type=== EnvironmentType.Local){
+        this.properties.envionmenttitle="Local Sharepoint Environment"
+    }else if (Environment.type==EnvironmentType.SharePoint || Environment.type==EnvironmentType.ClassicSharePoint){
+      this.properties.envionmenttitle="Online Sharepoint Environment"
+
+    }
+  }
 
   public render(): void {
     this.domElement.innerHTML = `
@@ -30,6 +47,9 @@ export default class ReadSitePropertiesWebPart extends BaseClientSideWebPart<IRe
               <p class="${ styles.description }">Relative URL ${escape(this.context.pageContext.web.serverRelativeUrl)}</p>
               <p class="${ styles.description }">User Name ${escape(this.context.pageContext.user.displayName)}</p>
 
+              <p class="${ styles.description }">Environment ${(Environment.type)}</p>
+              
+              <p class="${ styles.description }">Type of Environment ${(this.properties.envionmenttitle)}</p>
 
 
               <a href="https://aka.ms/spfx" class="${ styles.button }">
