@@ -6,18 +6,18 @@ import {
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 import { escape } from '@microsoft/sp-lodash-subset';
 
-import styles from './HelloWorldWebPart.module.scss';
-import * as strings from 'HelloWorldWebPartStrings';
+import styles from './HelloWorld2WebPart.module.scss';
+import * as strings from 'HelloWorld2WebPartStrings';
 
-export interface IHelloWorldWebPartProps {
+export interface IHelloWorld2WebPartProps {
   description: string;
 }
 
-export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorldWebPartProps> {
+export default class HelloWorld2WebPart extends BaseClientSideWebPart<IHelloWorld2WebPartProps> {
 
   public render(): void {
     this.domElement.innerHTML = `
-      <div class="${ styles.helloWorld }">
+      <div class="${ styles.helloWorld2 }">
         <div class="${ styles.container }">
           <div class="${ styles.row }">
             <div class="${ styles.column }">

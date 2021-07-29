@@ -1,12 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "anatomy-demo-client-side-solution",
-    "id": "facb9621-ed34-47bd-9aeb-93c80e4269d8",
+    "name": "skip-feature-deployment-demo-client-side-solution",
+    "id": "64d1838e-128d-456a-ab11-7ed0ab5cff2c",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
-    "isDomainIsolated": true,
+    "isDomainIsolated": false,
     "developer": {
       "name": "",
       "websiteUrl": "",
@@ -16,6 +16,6 @@
     }
   },
   "paths": {
-    "zippedPackage": "solution/anatomy-demo.sppkg"
+    "zippedPackage": "solution/skip-feature-deployment-demo.sppkg"
   }
 }

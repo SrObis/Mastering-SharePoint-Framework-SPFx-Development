@@ -3,10 +3,10 @@
     "isCreatingSolution": true,
     "environment": "spo",
     "version": "1.12.1",
-    "libraryName": "anatomy-demo",
-    "libraryId": "facb9621-ed34-47bd-9aeb-93c80e4269d8",
+    "libraryName": "skip-feature-deployment-demo",
+    "libraryId": "64d1838e-128d-456a-ab11-7ed0ab5cff2c",
     "packageManager": "npm",
-    "isDomainIsolated": true,
+    "isDomainIsolated": false,
     "componentType": "webpart"
   }
 }

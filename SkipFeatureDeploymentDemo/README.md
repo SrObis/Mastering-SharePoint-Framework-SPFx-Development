@@ -1,4 +1,4 @@
-# anatomy-demo
+# skip-feature-deployment-demo
 
 ## Summary
 

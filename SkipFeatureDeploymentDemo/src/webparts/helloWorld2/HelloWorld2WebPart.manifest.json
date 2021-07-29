@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
-  "id": "3e60ce29-1b8e-49e3-a344-bc40582ef8cf",
-  "alias": "HelloWorldWebPart",
+  "id": "ec9b0dec-0126-440b-b046-84d644dafff3",
+  "alias": "HelloWorld2WebPart",
   "componentType": "WebPart",
 
   // The "*" signifies that the version should be taken from the package.json
@@ -17,11 +17,11 @@
   "preconfiguredEntries": [{
     "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other
     "group": { "default": "Other" },
-    "title": { "default": "HelloWorld" },
-    "description": { "default": "HelloWorld description" },
+    "title": { "default": "HelloWorld2" },
+    "description": { "default": "HelloWorld2 description" },
     "officeFabricIconFontName": "Page",
     "properties": {
-      "description": "HelloWorld"
+      "description": "HelloWorld2"
     }
   }]
 }
