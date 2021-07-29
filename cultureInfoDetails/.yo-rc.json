@@ -2,9 +2,9 @@
   "@microsoft/generator-sharepoint": {
     "isCreatingSolution": true,
     "environment": "spo",
-    "version": "1.12.1",
-    "libraryName": "read-sitesproperti-demo",
-    "libraryId": "1bfba5d7-d78f-485b-ac84-310ab1bc83fd",
+    "version": "1.10.0",
+    "libraryName": "culture-info-details",
+    "libraryId": "6eedab23-7630-4a4f-8255-cfc59e71abf7",
     "packageManager": "npm",
     "isDomainIsolated": false,
     "componentType": "webpart"

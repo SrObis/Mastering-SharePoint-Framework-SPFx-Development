@@ -1,19 +1,16 @@
 # Sección 2: Working with SharePoint Client Side Web Parts
 
-## 18. Finding out SharePoint Environment Info
+# 19. Accessing Culture Info Details Using a Web Part
 
-### Seguimos con el proyecto del video anterior
+```cmc
+md  cultureInfoDetails
 
-#### Video Anterior 
-
-md  ReadSitespropertiDemo
-
-cd  ReadSitespropertiDemo
+cd  cultureInfoDetails
 
 yo @microsoft/sharepoint
-```cmc
+
 Let's create a new SharePoint solution.
-? What is your solution name? read-sitesproperti-demo
+? What is your solution name? culture-info-details
 ? Which baseline packages do you want to target for your component(s)? SharePoint O
 nline only (latest)
 ? Where do you want to place the files? Use the current folder
@@ -24,41 +21,24 @@ tion to all sites immediately without running any feature deployment or adding a
 ? Will the components in the solution require permissions to access web APIs that a
 re unique and not shared with other components in the tenant? No
 ? Which type of client-side component to create? WebPart
-Add new Web part to solution read-sitesproperti-demo.
-? What is your Web part name? ReadSiteProperties
-? What is your Web part description? ReadSiteProperties description
+Add new Web part to solution culture-info-details.
+? What is your Web part name? cultureInfoDetails
+? What is your Web part description? cultureInfoDetails description
 ? Which framework would you like to use? No JavaScript framework
 ```
 
-code .
-abrimos src/webparts/readsit...ts
+añadimos
 
-añadimos 
 ```TypeScript
-             <p class="${ styles.description }">Absolute URL ${escape(this.context.pageContext.web.absoluteUrl)}</p>
-              <p class="${ styles.description }">Title ${escape(this.context.pageContext.web.title)}</p>
-              <p class="${ styles.description }">Relative URL ${escape(this.context.pageContext.web.serverRelativeUrl)}</p>
-              <p class="${ styles.description }">User Name ${escape(this.context.pageContext.user.displayName)}</p>
+<ul>
+    <li><strong>current Culture Name</strong>: ${escape(this.context.pageContext.cultureInfo.currentCultureName)}</li>
+    <li><strong>current UI Culture Name</strong>: ${escape(this.context.pageContext.cultureInfo.currentUICultureName)}</li>
+    <li><strong>isRightToLeft?</strong>: ${this.context.pageContext.cultureInfo.isRightToLeft}</li>
+  </ul>
 ```
-Una vez tenemos el codigo puesto
+
+ejecutamos 
 gulp build
-gulp bundle
-gulp serve
-cuando añadimos la targeta vemos que se ha puesto la informacion que hemos puesto en el .ts
+gulp serve 
 
-
-#### Video Actual
-sin parar de ejecutar el localhost
-en el ReadSite .ts añadimos
-```TypeScript
-import {
-  Environment,
-  EnvironmentType
-} from '@microsoft/sp-core-library'
-```
-En la funcion render añadimos
-
- ```TypeScript
-        <p class="${ styles.description }">Environment ${(Environment.type)}</p>
-
- ```
+podemor ver que el culture name es en-US
