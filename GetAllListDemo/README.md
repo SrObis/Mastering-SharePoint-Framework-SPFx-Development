@@ -1,4 +1,4 @@
-## culture-info-details
+## get-all-list-demo
 
 This is where you include your WebPart documentation.
 
