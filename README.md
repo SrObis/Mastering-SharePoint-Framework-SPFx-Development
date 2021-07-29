@@ -21,3 +21,6 @@ Add new Web part to solution skip-feature-deployment-demo.
 ? What is your Web part name? HelloWorld2
 ? What is your Web part description? HelloWorld2 description
 ? Which framework would you like to use? No JavaScript framework
+
+gulp bundle --ship
+gulp package-solution --ship
