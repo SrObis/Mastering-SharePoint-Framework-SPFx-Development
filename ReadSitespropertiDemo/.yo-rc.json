@@ -3,8 +3,8 @@
     "isCreatingSolution": true,
     "environment": "spo",
     "version": "1.12.1",
-    "libraryName": "skip-feature-deployment-demo",
-    "libraryId": "64d1838e-128d-456a-ab11-7ed0ab5cff2c",
+    "libraryName": "read-sitesproperti-demo",
+    "libraryId": "1bfba5d7-d78f-485b-ac84-310ab1bc83fd",
     "packageManager": "npm",
     "isDomainIsolated": false,
     "componentType": "webpart"
