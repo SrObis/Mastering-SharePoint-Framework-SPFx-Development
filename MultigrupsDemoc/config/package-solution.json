@@ -1,8 +1,8 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "working-with-property-pane-controls-client-side-solution",
-    "id": "9ecd8e16-f6a5-4e92-b2c4-b4f6ca00af9e",
+    "name": "multigrups-democ-client-side-solution",
+    "id": "28108139-b245-433c-afab-57fe0bbe2bca",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "isDomainIsolated": false,
@@ -15,6 +15,6 @@
     }
   },
   "paths": {
-    "zippedPackage": "solution/working-with-property-pane-controls.sppkg"
+    "zippedPackage": "solution/multigrups-democ.sppkg"
   }
 }
