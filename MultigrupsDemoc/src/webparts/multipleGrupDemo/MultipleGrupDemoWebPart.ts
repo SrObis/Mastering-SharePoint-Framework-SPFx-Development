@@ -50,24 +50,88 @@ export default class MultipleGrupDemoWebPart extends BaseClientSideWebPart<IMult
       
       pages: [{
           header: {
-            description: strings.PropertyPaneDescription
+            description: "Page 1"
           },
           groups: [{
-              groupName: "First Group",
+              groupName: "First Group 1",
               groupFields: [
                 PropertyPaneTextField('productname', {
-                  label: "Product Name"
+                  label: "Product Name 1"
+                })
+                ]
+                },{
+              groupName: "Second Group 1",
+              groupFields: [
+                PropertyPaneToggle('isCertified', {
+                  label: "Is Certified 1?"
+                })
+                ]
+                }],
+                displayGroupsAsAccordion: true
+        },{
+          header: {
+            description: "Page 2"
+          },
+          groups: [{
+              groupName: "First Group 2",
+              groupFields: [
+                PropertyPaneTextField('productname', {
+                  label: "Product Name 2"
                 })
                 ]
                 },{
               groupName: "Second Group",
               groupFields: [
                 PropertyPaneToggle('isCertified', {
-                  label: "Is Certified?"
+                  label: "Is Certified 2?"
                 })
                 ]
                 }],
-        }]
+                displayGroupsAsAccordion: true
+        },{
+          header: {
+            description: "Page 3"
+          },
+          groups: [{
+              groupName: "First Group 3",
+              groupFields: [
+                PropertyPaneTextField('productname', {
+                  label: "Product Name 3"
+                })
+                ]
+                },{
+              groupName: "Second Group 3",
+              groupFields: [
+                PropertyPaneToggle('isCertified', {
+                  label: "Is Certified 3?"
+                })
+                ]
+                }],
+                displayGroupsAsAccordion: true
+        },{
+          header: {
+            description: "Page 4"
+          },
+          groups: [{
+              groupName: "First Group 4",
+              groupFields: [
+                PropertyPaneTextField('productname', {
+                  label: "Product Name 4"
+                })
+                ]
+                },{
+              groupName: "Second Group 4",
+              groupFields: [
+                PropertyPaneToggle('isCertified', {
+                  label: "Is Certified 4?"
+                })
+                ]
+                }],
+                displayGroupsAsAccordion: true
+        },
+      
+      
+      ]// array pages end
     };
   }
 }

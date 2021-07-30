@@ -1,7 +1,8 @@
 # Sección 3: Working With Property Pane
 
-# 33. Working with Multiple Groups
+## 34. Working with Multiple Pages
 
+### Video Anterior
 ```cmc
 md  MultigrupsDemoc
 
