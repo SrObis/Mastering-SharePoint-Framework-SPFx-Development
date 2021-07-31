@@ -1,4 +1,5 @@
-# Sección 3: Working With Property Pane
+# Sección 4: Working with Property Pane Various Controls
+
 
 ## 35. Modifying Default Icon
 
