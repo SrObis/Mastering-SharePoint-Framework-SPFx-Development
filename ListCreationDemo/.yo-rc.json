@@ -2,9 +2,9 @@
   "@microsoft/generator-sharepoint": {
     "isCreatingSolution": true,
     "environment": "spo",
-    "version": "1.9.1",
-    "libraryName": "get-all-list-demo",
-    "libraryId": "4a7572df-130a-4b50-9a17-19bcdd261c6e",
+    "version": "1.10.0",
+    "libraryName": "list-creation-demo",
+    "libraryId": "541fdeef-643a-40ed-8858-04ea1c5d9b5a",
     "packageManager": "npm",
     "isDomainIsolated": false,
     "componentType": "webpart"
