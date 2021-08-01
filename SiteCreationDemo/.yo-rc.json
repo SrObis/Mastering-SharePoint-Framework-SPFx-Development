@@ -3,8 +3,8 @@
     "isCreatingSolution": true,
     "environment": "spo",
     "version": "1.10.0",
-    "libraryName": "list-creation-demo",
-    "libraryId": "541fdeef-643a-40ed-8858-04ea1c5d9b5a",
+    "libraryName": "site-creation-demo",
+    "libraryId": "ad6e6830-975c-43b3-ac98-b61d75cb05f9",
     "packageManager": "npm",
     "isDomainIsolated": false,
     "componentType": "webpart"

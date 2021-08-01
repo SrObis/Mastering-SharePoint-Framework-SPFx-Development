@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "list-creation-demo-client-side-solution",
-    "id": "541fdeef-643a-40ed-8858-04ea1c5d9b5a",
+    "name": "site-creation-demo-client-side-solution",
+    "id": "ad6e6830-975c-43b3-ac98-b61d75cb05f9",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "isDomainIsolated": false
   },
   "paths": {
-    "zippedPackage": "solution/list-creation-demo.sppkg"
+    "zippedPackage": "solution/site-creation-demo.sppkg"
   }
 }

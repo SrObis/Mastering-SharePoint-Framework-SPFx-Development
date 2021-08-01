@@ -1,4 +1,4 @@
-## list-creation-demo
+## site-creation-demo
 
 This is where you include your WebPart documentation.
 
