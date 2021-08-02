@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "get-all-list-demo-client-side-solution",
-    "id": "4a7572df-130a-4b50-9a17-19bcdd261c6e",
+    "name": "sppnpjscruddemo-client-side-solution",
+    "id": "1cc53eb8-e389-484e-97c5-eef998dd7f5b",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "isDomainIsolated": false
   },
   "paths": {
-    "zippedPackage": "solution/get-all-list-demo.sppkg"
+    "zippedPackage": "solution/sppnpjscruddemo.sppkg"
   }
 }

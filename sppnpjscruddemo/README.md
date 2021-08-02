@@ -1,4 +1,4 @@
-## get-all-list-demo
+## sppnpjscruddemo
 
 This is where you include your WebPart documentation.
 
