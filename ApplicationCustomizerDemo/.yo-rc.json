@@ -3,10 +3,11 @@
     "isCreatingSolution": true,
     "environment": "spo",
     "version": "1.10.0",
-    "libraryName": "testmynewcustomlibrary",
-    "libraryId": "4d75ed42-0932-42b2-9740-f79767815336",
+    "libraryName": "application-customizer-demo",
+    "libraryId": "0853900c-d5f6-4e61-ad11-90d372350fa0",
     "packageManager": "npm",
     "isDomainIsolated": false,
-    "componentType": "webpart"
+    "componentType": "extension",
+    "extensionType": "ApplicationCustomizer"
   }
 }

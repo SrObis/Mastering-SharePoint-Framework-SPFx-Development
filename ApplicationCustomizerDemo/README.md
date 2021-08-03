@@ -1,4 +1,4 @@
-## testmynewcustomlibrary
+## application-customizer-demo
 
 This is where you include your WebPart documentation.
 

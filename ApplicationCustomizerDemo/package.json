@@ -1,7 +1,7 @@
 {
-  "name": "mynewcustomlibrary",
+  "name": "application-customizer-demo",
   "version": "0.0.1",
-  "private": false,
+  "private": true,
   "main": "lib/index.js",
   "engines": {
     "node": ">=0.10.0"
@@ -12,8 +12,12 @@
     "test": "gulp test"
   },
   "dependencies": {
+    "@microsoft/sp-core-library": "1.10.0",
+    "@microsoft/decorators": "1.10.0",
     "@types/webpack-env": "1.13.1",
-    "@types/es6-promise": "0.0.33"
+    "@types/es6-promise": "0.0.33",
+    "@microsoft/sp-dialog": "1.10.0",
+    "@microsoft/sp-application-base": "1.10.0"
   },
   "devDependencies": {
     "@microsoft/sp-build-web": "1.10.0",
