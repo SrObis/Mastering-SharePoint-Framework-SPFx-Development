@@ -1,4 +1,4 @@
-# Sección 8: Creating SharePoint Artefacts 
+# Sección 9: Working with Library
 
 ## 49. Creating a Library
 
@@ -24,4 +24,8 @@ omponents in the tenant? No
 Add new Library to solution mynewcustomlibrary.
 ? What is your Library name? mynewcustomlibrarydemo
 ? What is your Library description? mynewcustomlibrarydemo description
+
+
+gulp build
+npm link
 ```
