@@ -2,11 +2,11 @@
   "@microsoft/generator-sharepoint": {
     "isCreatingSolution": true,
     "environment": "spo",
-    "version": "1.10.0",
-    "libraryName": "provisionassetsdemo",
-    "libraryId": "dd6e7bf3-ada6-43f7-be0a-05b674eed33c",
+    "version": "1.12.1",
+    "libraryName": "mynewcustomlibrary",
+    "libraryId": "e407338c-87e4-4dab-96b9-da519b62d554",
     "packageManager": "npm",
     "isDomainIsolated": false,
-    "componentType": "webpart"
+    "componentType": "library"
   }
 }
