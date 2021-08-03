@@ -1,3 +1,6 @@
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+
 import { Log } from '@microsoft/sp-core-library';
 import { override } from '@microsoft/decorators';
 import {
@@ -5,46 +8,43 @@ import {
   IFieldCustomizerCellEventParameters
 } from '@microsoft/sp-listview-extensibility';
 
-import * as strings from 'MyFieldCustomizerExtensionFieldCustomizerStrings';
-import styles from './MyFieldCustomizerExtensionFieldCustomizer.module.scss';
+import * as strings from 'FecDemoFieldCustomizerStrings';
+import FecDemo, { IFecDemoProps } from './components/FecDemo';
 
 /**
  * If your field customizer uses the ClientSideComponentProperties JSON input,
  * it will be deserialized into the BaseExtension.properties object.
  * You can define an interface to describe it.
  */
-export interface IMyFieldCustomizerExtensionFieldCustomizerProperties {
+export interface IFecDemoFieldCustomizerProperties {
   // This is an example; replace with your own property
   sampleText?: string;
 }
 
-const LOG_SOURCE: string = 'MyFieldCustomizerExtensionFieldCustomizer';
+const LOG_SOURCE: string = 'FecDemoFieldCustomizer';
 
-export default class MyFieldCustomizerExtensionFieldCustomizer
-  extends BaseFieldCustomizer<IMyFieldCustomizerExtensionFieldCustomizerProperties> {
+export default class FecDemoFieldCustomizer
+  extends BaseFieldCustomizer<IFecDemoFieldCustomizerProperties> {
 
   @override
   public onInit(): Promise<void> {
     // Add your custom initialization to this method.  The framework will wait
     // for the returned promise to resolve before firing any BaseFieldCustomizer events.
-    Log.info(LOG_SOURCE, 'Activated MyFieldCustomizerExtensionFieldCustomizer with properties:');
+    Log.info(LOG_SOURCE, 'Activated FecDemoFieldCustomizer with properties:');
     Log.info(LOG_SOURCE, JSON.stringify(this.properties, undefined, 2));
-    Log.info(LOG_SOURCE, `The following string should be equal: "MyFieldCustomizerExtensionFieldCustomizer" and "${strings.Title}"`);
+    Log.info(LOG_SOURCE, `The following string should be equal: "FecDemoFieldCustomizer" and "${strings.Title}"`);
     return Promise.resolve();
   }
 
   @override
   public onRenderCell(event: IFieldCustomizerCellEventParameters): void {
     // Use this method to perform your custom cell rendering.
-    //const text: string = `${this.properties.sampleText}: ${event.fieldValue}`;
-
     const text: string = `${event.fieldValue}`;
 
-   // event.domElement.innerText = text;
+    const fecDemo: React.ReactElement<{}> =
+      React.createElement(FecDemo, { text } as IFecDemoProps);
 
-    //event.domElement.classList.add(styles.cell);
-
-    event.domElement.innerHTML = `<div class='${styles.MyFieldCustomizerExtension}'><div class='${styles.cell}'><div style='background:red;width:${event.fieldValue}px;color:blue;'>${event.fieldValue}%</div></div></div>`;
+    ReactDOM.render(fecDemo, event.domElement);
   }
 
   @override
@@ -52,6 +52,7 @@ export default class MyFieldCustomizerExtensionFieldCustomizer
     // This method should be used to free any resources that were allocated during rendering.
     // For example, if your onRenderCell() called ReactDOM.render(), then you should
     // call ReactDOM.unmountComponentAtNode() here.
+    ReactDOM.unmountComponentAtNode(event.domElement);
     super.onDisposeCell(event);
   }
 }

@@ -7,18 +7,18 @@
       "pageUrl": "https://kameswarasarma.sharepoint.com/Lists/ProjectsStatus/AllItems.aspx",
       "fieldCustomizers": {
         "Status": {
-          "id": "4fe3e53b-ab3e-4db1-8bf2-e1765fbb7190",
+          "id": "e3e2c690-0a3d-46b2-8645-6a805d3faa63",
           "properties": {
             "sampleText": "Completed"
           }
         }
       }
     },
-    "myFieldCustomizerExtension": {
+    "fecDemo": {
       "pageUrl": "https://kameswarasarma.sharepoint.com/Lists/ProjectsStatus/AllItems.aspx",
       "fieldCustomizers": {
         "Status": {
-          "id": "4fe3e53b-ab3e-4db1-8bf2-e1765fbb7190",
+          "id": "e3e2c690-0a3d-46b2-8645-6a805d3faa63",
           "properties": {
             "sampleText": "Completed"
           }

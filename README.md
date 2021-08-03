@@ -3,16 +3,15 @@
 ## 55. Creating FieldCustomizer Extension
 
 ```cmc
-md  FieldExtensionDemo
+md  FECUsingReact
 
-cd  FieldExtensionDemo
+cd  FECUsingReact
 
 yo @microsoft/sharepoint
 
 
 Let's create a new SharePoint solution.
-
-? What is your solution name? field-extension-demo
+? What is your solution name? fec-using-react
 ? Which baseline packages do you want to target for your component(s)? SharePoint Online only (latest)
 ? Where do you want to place the files? Use the current folder
 Found npm version 6.14.13
@@ -20,9 +19,16 @@ Found npm version 6.14.13
  running any feature deployment or adding apps in sites? No
 ? Will the components in the solution require permissions to access web APIs that are unique and not shared with other c
 omponents in the tenant? No
-? Which type of client-side component to create? Extencion
-? Which type of client-side extencion to create? Field Customizer 
-? What is your Field Customizer name? MyFieldCustomizerExtencion
-? What is your Field Customizer description? MyFieldCustomizerExtencion description
+? Which type of client-side component to create? Extension
+? Which type of client-side extension to create? Field Customizer
+Add new Field Customizer to solution fec-using-react.
+? What is your Field Customizer name? FECDemo
+? What is your Field Customizer description? FECDemo description
+? Which framework would you like to use? React
+
+
+gulp build
+gulp serve
+
 
 ```

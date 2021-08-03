@@ -1,4 +1,4 @@
-## field-extension-demo
+## fec-using-react
 
 This is where you include your WebPart documentation.
 
