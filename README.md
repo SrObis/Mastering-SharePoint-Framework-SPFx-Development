@@ -1,8 +1,8 @@
 # Sección 9: Working with Library
 
-## 50. Test Library locally
+## 51. Deploy Library to SharePoint Online and Test
 
-### Video Anterior 
+### Videos Anteriores 
 ```cmc
 md  mynewcustomlibrary
 
@@ -29,8 +29,6 @@ Add new Library to solution mynewcustomlibrary.
 gulp build
 npm link
 ```
-
-### Video Actual 
 
 Abrimos un nuevo terminal
 ```cmc
@@ -59,16 +57,26 @@ npm link mynewcustomlibrary
 gulp serve
 ```
 
+### Video Actual
+
+en el terminal de mynewcustomlibrary
 
 
+```cmc
+gulp bundle --ship
+
+gulp package-solution --ship
+```
 
 
+en el terminal de testmynewcustomlibrary
 
 
+```cmc
+gulp bundle --ship
 
-
-
-
+gulp package-solution --ship
+```
 
 
 
