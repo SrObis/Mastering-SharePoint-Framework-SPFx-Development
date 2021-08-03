@@ -2,18 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
     "name": "testmynewcustomlibrary-client-side-solution",
-    "id": "ee0e816e-d683-4fc0-909a-dc700cf552cb",
+    "id": "4d75ed42-0932-42b2-9740-f79767815336",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
-    "isDomainIsolated": false,
-    "developer": {
-      "name": "",
-      "websiteUrl": "",
-      "privacyUrl": "",
-      "termsOfUseUrl": "",
-      "mpnId": ""
-    }
+    "isDomainIsolated": false
   },
   "paths": {
     "zippedPackage": "solution/testmynewcustomlibrary.sppkg"

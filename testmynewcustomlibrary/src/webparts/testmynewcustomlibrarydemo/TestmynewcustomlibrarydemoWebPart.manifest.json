@@ -1,6 +1,6 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
-  "id": "6c43c618-e847-4f21-b406-ad41fe02bbf8",
+  "id": "266072fd-cbb7-471e-8fa2-05135c13a6c0",
   "alias": "TestmynewcustomlibrarydemoWebPart",
   "componentType": "WebPart",
 
@@ -13,6 +13,7 @@
   // https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f
   "requiresCustomScript": false,
   "supportedHosts": ["SharePointWebPart"],
+  "supportsFullBleed": true,
 
   "preconfiguredEntries": [{
     "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other

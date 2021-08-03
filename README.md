@@ -1,6 +1,6 @@
 # Sección 9: Working with Library
 
-## 51. Deploy Library to SharePoint Online and Test
+## 52. Setting Full Width layout
 
 ### Videos Anteriores 
 ```cmc
@@ -56,8 +56,6 @@ Add new Web part to solution testmynewcustomlibrary.
 npm link mynewcustomlibrary
 gulp serve
 ```
-
-### Video Actual
 
 en el terminal de mynewcustomlibrary
 
