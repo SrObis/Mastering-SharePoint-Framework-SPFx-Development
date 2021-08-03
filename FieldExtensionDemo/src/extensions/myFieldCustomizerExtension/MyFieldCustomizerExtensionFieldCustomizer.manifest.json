@@ -1,10 +1,10 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-extension-manifest.schema.json",
 
-  "id": "b6fd3a84-cd9c-4846-8744-ca9650666bf2",
-  "alias": "AcDemoApplicationCustomizer",
+  "id": "4fe3e53b-ab3e-4db1-8bf2-e1765fbb7190",
+  "alias": "MyFieldCustomizerExtensionFieldCustomize",
   "componentType": "Extension",
-  "extensionType": "ApplicationCustomizer",
+  "extensionType": "FieldCustomizer",
 
   // The "*" signifies that the version should be taken from the package.json
   "version": "*",

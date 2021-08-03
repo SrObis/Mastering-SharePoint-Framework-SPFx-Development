@@ -1,20 +1,18 @@
 # Sección 10: Working with Spfx Extensions
 
-## 53. Creating an ApplicationCustomizer Extension - Demo 1
+## 55. Creating FieldCustomizer Extension
 
-### y
-
-## 54. Creating an ApplicationCustomizer Extension - Demo 2
 ```cmc
-md  ApplicationCustomizerDemo
+md  FieldExtensionDemo
 
-cd  ApplicationCustomizerDemo
+cd  FieldExtensionDemo
 
 yo @microsoft/sharepoint
 
 
 Let's create a new SharePoint solution.
-? What is your solution name? aplicatin-customizer-demo
+
+? What is your solution name? field-extension-demo
 ? Which baseline packages do you want to target for your component(s)? SharePoint Online only (latest)
 ? Where do you want to place the files? Use the current folder
 Found npm version 6.14.13
@@ -23,8 +21,8 @@ Found npm version 6.14.13
 ? Will the components in the solution require permissions to access web APIs that are unique and not shared with other c
 omponents in the tenant? No
 ? Which type of client-side component to create? Extencion
-? Which type of client-side extencion to create? Application Customizer 
-? What is your Application Customizer name? ACDemo
-? What is your Application Customizer description? ACDemo description
+? Which type of client-side extencion to create? Field Customizer 
+? What is your Field Customizer name? MyFieldCustomizerExtencion
+? What is your Field Customizer description? MyFieldCustomizerExtencion description
 
 ```
