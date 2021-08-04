@@ -2,12 +2,12 @@
   "@microsoft/generator-sharepoint": {
     "isCreatingSolution": true,
     "environment": "spo",
-    "version": "1.10.0",
-    "libraryName": "fec-using-react",
-    "libraryId": "30437165-5965-42af-ba77-c0d998cf5069",
+    "version": "1.12.1",
+    "libraryName": "command-set-demo",
+    "libraryId": "f4b9283f-f057-4ae9-8525-4f48a9901659",
     "packageManager": "npm",
     "isDomainIsolated": false,
     "componentType": "extension",
-    "extensionType": "FieldCustomizer"
+    "extensionType": "ListViewCommandSet"
   }
 }
