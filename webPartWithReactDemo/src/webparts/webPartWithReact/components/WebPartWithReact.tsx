@@ -13,6 +13,15 @@ export default class WebPartWithReact extends React.Component<IWebPartWithReactP
               <span className={ styles.title }>Welcome to SharePoint Using React!</span>
               <p className={ styles.subTitle }>Customize SharePoint experiences using Web Parts with React.</p>
               <p className={ styles.description }>{escape(this.props.description)}</p>
+
+              
+              <p className="${ styles.description }">Absolute URL{escape(this.props.absoluturl)}</p>
+              <p className="${ styles.description }">Title{escape(this.props.sitetile)}</p>
+              <p className="${ styles.description }">Relative URL{escape(this.props.relativeurl)}</p>
+              <p className="${ styles.description }">User Name{escape(this.props.username)}</p>
+
+
+
               <a href="https://aka.ms/spfx" className={ styles.button }>
                 <span className={ styles.label }>Learn more</span>
               </a>
