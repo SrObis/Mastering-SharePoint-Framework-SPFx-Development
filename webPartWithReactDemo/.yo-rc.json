@@ -3,11 +3,10 @@
     "isCreatingSolution": true,
     "environment": "spo",
     "version": "1.12.1",
-    "libraryName": "command-set-demo",
-    "libraryId": "f4b9283f-f057-4ae9-8525-4f48a9901659",
+    "libraryName": "web-part-with-react-demo",
+    "libraryId": "cfbf2a55-53a5-4820-b71c-c584ee08252f",
     "packageManager": "npm",
     "isDomainIsolated": false,
-    "componentType": "extension",
-    "extensionType": "ListViewCommandSet"
+    "componentType": "webpart"
   }
 }

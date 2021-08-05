@@ -1,4 +1,4 @@
-# command-set-demo
+# web-part-with-react-demo
 
 ## Summary
 
