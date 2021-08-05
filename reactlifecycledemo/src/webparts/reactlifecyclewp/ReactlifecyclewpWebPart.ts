@@ -7,25 +7,21 @@ import {
 } from '@microsoft/sp-property-pane';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 
-import * as strings from 'WebPartWithReactWebPartStrings';
-import WebPartWithReact from './components/WebPartWithReact';
-import { IWebPartWithReactProps } from './components/IWebPartWithReactProps';
+import * as strings from 'ReactlifecyclewpWebPartStrings';
+import Reactlifecyclewp from './components/Reactlifecyclewp';
+import { IReactlifecyclewpProps } from './components/IReactlifecyclewpProps';
 
-export interface IWebPartWithReactWebPartProps {
+export interface IReactlifecyclewpWebPartProps {
   description: string;
 }
 
-export default class WebPartWithReactWebPart extends BaseClientSideWebPart<IWebPartWithReactWebPartProps> {
+export default class ReactlifecyclewpWebPart extends BaseClientSideWebPart <IReactlifecyclewpWebPartProps> {
 
   public render(): void {
-    const element: React.ReactElement<IWebPartWithReactProps> = React.createElement(
-      WebPartWithReact,
+    const element: React.ReactElement<IReactlifecyclewpProps> = React.createElement(
+      Reactlifecyclewp,
       {
-        description: this.properties.description,
-        absoluturl: this.context.pageContext.web.absoluteUrl,
-        sitetile: this.context.pageContext.web.title,
-        relativeurl: this.context.pageContext.web.serverRelativeUrl,
-        username: this.context.pageContext.user.displayName
+        description: this.properties.description
       }
     );
 
