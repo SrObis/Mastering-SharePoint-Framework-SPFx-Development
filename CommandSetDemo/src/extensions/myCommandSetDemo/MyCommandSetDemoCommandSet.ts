@@ -11,6 +11,9 @@ import { Dialog } from '@microsoft/sp-dialog';
 
 import * as strings from 'MyCommandSetDemoCommandSetStrings';
 
+import * as pnp from 'sp-pnp-js';
+
+
 /**
  * If your command set uses the ClientSideComponentProperties JSON input,
  * it will be deserialized into the BaseExtension.properties object.
@@ -44,6 +47,12 @@ export default class MyCommandSetDemoCommandSet extends BaseListViewCommandSet<I
       // This command should be hidden unless exactly one row is selected.
       compareTwoCommand.visible = event.selectedRows.length > 1;
     }
+    const compareThreeCommand: Command = this.tryGetCommand('COMMAND_3');
+
+    if (compareThreeCommand) {
+      // This command should be hidden unless exactly one row is selected.
+      compareThreeCommand.visible = event.selectedRows.length > 1;
+    }
   }
 
   @override
@@ -60,8 +69,30 @@ export default class MyCommandSetDemoCommandSet extends BaseListViewCommandSet<I
       case 'COMMAND_2':
         Dialog.alert(`${this.properties.sampleTextTwo}`);
         break;
+        case 'COMMAND_3':
+          Dialog.prompt(`Project Status Remarks`).then((value:string)=>{
+            this.UpdateRemarks(event.selectedRows,value)});
+          
       default:
         throw new Error('Unknown command');
     }
   }
+
+  private UpdateRemarks(items: any, value:string){
+    let batch = pnp.sp.createBatch();
+    items.forEach(item => {
+      pnp.sp.web.lists.getByTitle("ProjectsStatus").items.getById(item.
+        getValueByName("ID")).inBatch(batch).update({Remarks:value}).then(res =>{
+
+        });
+      
+    });
+  }
+
+
+
+
+
+
+
 }

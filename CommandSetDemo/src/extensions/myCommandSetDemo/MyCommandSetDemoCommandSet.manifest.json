@@ -24,7 +24,7 @@
     },
     "COMMAND_3": {
       "title": {
-        "default": "Command 3"
+        "default": "Update Remarks"
       },
       "iconImageUrl": "icons/cancel.png",
       "type": "command"

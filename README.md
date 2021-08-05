@@ -1,6 +1,9 @@
 # Sección 10: Working with Spfx Extensions
 
-## 57. Creating CommandSet Extension
+## 58. Performing BulkUpdate using ListView CommandSet Extension
+
+### Video Anterior
+
 ```cmc
 md  CommandSetDemo
 
@@ -32,4 +35,9 @@ En config->serve.json en las dos pageUrl cambiarlas por donde queramos que se ve
 
 gulp build
 gulp serve
+```
+### Video Actual 
+
+```cmc
+    npm install sp-pnp-js --save
 ```
