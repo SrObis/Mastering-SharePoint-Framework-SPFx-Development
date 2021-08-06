@@ -1,6 +1,7 @@
 # Sección 14: Working with MS Graph API
 
-## 72. Working with GraphAPI using React Framework To Read Calendar Events
+
+## 73/74/75. Displaying All Users Using Office Fabric UI React DetailsList Control
 
 
 

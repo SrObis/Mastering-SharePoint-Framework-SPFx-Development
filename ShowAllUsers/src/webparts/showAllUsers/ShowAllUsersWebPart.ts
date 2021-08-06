@@ -7,24 +7,23 @@ import {
 } from '@microsoft/sp-property-pane';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 
-import * as strings from 'CalendarEventsDemoWebPartStrings';
-import CalendarEventsDemo from './components/CalendarEventsDemo';
-import { ICalendarEventsDemoProps } from './components/ICalendarEventsDemoProps';
+import * as strings from 'ShowAllUsersWebPartStrings';
+import ShowAllUsers from './components/ShowAllUsers';
+import { IShowAllUsersProps } from './components/IShowAllUsersProps';
 
-export interface ICalendarEventsDemoWebPartProps {
+export interface IShowAllUsersWebPartProps {
   description: string;
 }
 
-export default class CalendarEventsDemoWebPart extends BaseClientSideWebPart <ICalendarEventsDemoWebPartProps> {
+export default class ShowAllUsersWebPart extends BaseClientSideWebPart <IShowAllUsersWebPartProps> {
 
   public render(): void {
-    const element: React.ReactElement<ICalendarEventsDemoProps> = React.createElement(
-      CalendarEventsDemo,
+    const element: React.ReactElement<IShowAllUsersProps> = React.createElement(
+      ShowAllUsers,
       {
         description: this.properties.description,
         context: this.context
       }
-      
     );
 
     ReactDom.render(element, this.domElement);
