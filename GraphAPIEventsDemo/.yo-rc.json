@@ -3,8 +3,8 @@
     "isCreatingSolution": true,
     "environment": "spo",
     "version": "1.10.0",
-    "libraryName": "external-libraries-demo",
-    "libraryId": "defbb2c5-d262-4134-bf7b-3403cc7b7e0c",
+    "libraryName": "graph-api-events-demo",
+    "libraryId": "3333546d-6fbf-4dbf-a410-0d6c7ff4923a",
     "packageManager": "npm",
     "isDomainIsolated": false,
     "componentType": "webpart"

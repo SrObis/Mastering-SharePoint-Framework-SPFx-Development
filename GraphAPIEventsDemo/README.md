@@ -1,4 +1,4 @@
-## external-libraries-demo
+## graph-api-events-demo
 
 This is where you include your WebPart documentation.
 
