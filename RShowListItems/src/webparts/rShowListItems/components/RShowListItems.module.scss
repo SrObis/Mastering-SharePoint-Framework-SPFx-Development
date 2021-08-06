@@ -1,6 +1,6 @@
 @import '~office-ui-fabric-react/dist/sass/References.scss';
 
-.reactlifecyclewp {
+.rShowListItems {
   .container {
     max-width: 700px;
     margin: 0px auto;
@@ -9,8 +9,11 @@
 
   .row {
     @include ms-Grid-row;
-    @include ms-fontColor-white;
-    background-color: $ms-color-themeDark;
+
+    @include ms-fontColor-blue;
+    background-color: aqua;
+
+    
     padding: 20px;
   }
 

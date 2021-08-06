@@ -3,8 +3,8 @@
     "isCreatingSolution": true,
     "environment": "spo",
     "version": "1.10.0",
-    "libraryName": "reactlifecycledemo",
-    "libraryId": "972deed2-719a-465f-83f8-84d065c62895",
+    "libraryName": "r-show-list-items",
+    "libraryId": "12433267-62e6-4374-a0ac-1a50480e4bcd",
     "packageManager": "npm",
     "isDomainIsolated": false,
     "componentType": "webpart"

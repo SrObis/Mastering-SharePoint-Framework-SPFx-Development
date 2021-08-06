@@ -1,4 +1,4 @@
-## reactlifecycledemo
+## r-show-list-items
 
 This is where you include your WebPart documentation.
 

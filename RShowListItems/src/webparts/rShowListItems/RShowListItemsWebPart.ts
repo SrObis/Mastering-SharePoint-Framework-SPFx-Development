@@ -7,21 +7,22 @@ import {
 } from '@microsoft/sp-property-pane';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 
-import * as strings from 'ReactlifecyclewpWebPartStrings';
-import Reactlifecyclewp from './components/Reactlifecyclewp';
-import { IReactlifecyclewpProps } from './components/IReactlifecyclewpProps';
+import * as strings from 'RShowListItemsWebPartStrings';
+import RShowListItems from './components/RShowListItems';
+import { IRShowListItemsProps } from './components/IRShowListItemsProps';
 
-export interface IReactlifecyclewpWebPartProps {
+export interface IRShowListItemsWebPartProps {
   description: string;
 }
 
-export default class ReactlifecyclewpWebPart extends BaseClientSideWebPart <IReactlifecyclewpWebPartProps> {
+export default class RShowListItemsWebPart extends BaseClientSideWebPart <IRShowListItemsWebPartProps> {
 
   public render(): void {
-    const element: React.ReactElement<IReactlifecyclewpProps> = React.createElement(
-      Reactlifecyclewp,
+    const element: React.ReactElement<IRShowListItemsProps> = React.createElement(
+      RShowListItems,
       {
-        description: this.properties.description
+        description: this.properties.description,
+        websiteurl:this.context.pageContext.web.absoluteUrl
       }
     );
 
