@@ -1,4 +1,4 @@
-## anonymous-api-demo
+## anonymous-api-demo-2
 
 This is where you include your WebPart documentation.
 
