@@ -3,8 +3,8 @@
     "isCreatingSolution": true,
     "environment": "spo",
     "version": "1.10.0",
-    "libraryName": "r-show-list-items",
-    "libraryId": "12433267-62e6-4374-a0ac-1a50480e4bcd",
+    "libraryName": "anonymous-api-demo",
+    "libraryId": "4e522530-99fc-4802-9e68-30c764cd3c90",
     "packageManager": "npm",
     "isDomainIsolated": false,
     "componentType": "webpart"

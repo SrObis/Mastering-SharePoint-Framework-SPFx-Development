@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
-  "id": "b16a050c-a5be-4517-9984-5efa6d397b7c",
-  "alias": "RShowListItemsWebPart",
+  "id": "710703cb-7835-49ff-acc0-206a7454c341",
+  "alias": "AnonymousApiwpDemoWebPart",
   "componentType": "WebPart",
 
   // The "*" signifies that the version should be taken from the package.json
@@ -17,11 +17,11 @@
   "preconfiguredEntries": [{
     "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other
     "group": { "default": "Other" },
-    "title": { "default": "RShowListItems" },
-    "description": { "default": "RShowListItems description" },
+    "title": { "default": "AnonymousAPIWPDemo" },
+    "description": { "default": "AnonymousAPIWPDemo description" },
     "officeFabricIconFontName": "Page",
     "properties": {
-      "description": "RShowListItems"
+      "description": "AnonymousAPIWPDemo"
     }
   }]
 }

@@ -1,7 +1,6 @@
-# Sección 11: Working with React
+# Sección 12: Working with Anonymous API
 
-## 62. Display List Items of a List using React - Part 1
-## 63. Display List Items of a List Using React - Part 2
+## 64. Invoking Anonymous API from Spfx Web Part
 
 
 
