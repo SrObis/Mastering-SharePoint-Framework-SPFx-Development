@@ -20,7 +20,9 @@
     ],
     "types": [
       "es6-promise",
-      "webpack-env"
+      "webpack-env",
+      "jquery",
+      "jqueryui",
     ],
     "lib": [
       "es5",

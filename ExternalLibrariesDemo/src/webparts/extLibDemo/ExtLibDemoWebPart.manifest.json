@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
-  "id": "e1f96445-86d4-475e-988c-f14eb910bedc",
-  "alias": "AnonymousDemo2WebPart",
+  "id": "2d1fcb0e-a427-401d-85ed-b00972785b7b",
+  "alias": "ExtLibDemoWebPart",
   "componentType": "WebPart",
 
   // The "*" signifies that the version should be taken from the package.json
@@ -17,13 +17,11 @@
   "preconfiguredEntries": [{
     "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other
     "group": { "default": "Other" },
-    "title": { "default": "AnonymousDemo2" },
-    "description": { "default": "AnonymousDemo2 description" },
+    "title": { "default": "ExtLibDemo" },
+    "description": { "default": "ExtLibDemo description" },
     "officeFabricIconFontName": "Page",
     "properties": {
-      "description": "AnonymousDemo3",
-      "apiURL": "https://jsonplaceholder.typicode.com/users",
-      "userID": "1"
+      "description": "ExtLibDemo"
     }
   }]
 }

@@ -1,6 +1,6 @@
-# Sección 12: Working with Anonymous API
+# Sección 13: Working with External Libraries
 
-## 65/66. Invoking Anonymous API from React Component 
+## 67. Develop a Spfx Web Part to work with External Libraries
 
 
 
